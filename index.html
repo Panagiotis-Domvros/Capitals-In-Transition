@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#102638">
-  <meta name="description" content="Πρωτεύουσες σε Μετάβαση: ένας διαδραστικός ιστορικός χάρτης με μαθητικές εργασίες για την Κωνσταντινούπολη, την Αίγινα, το Ναύπλιο και την Αθήνα.">
+  <meta name="description" content="Πρωτεύουσες σε Μετάβαση: ιστορική διαδρομή από τη Βυζαντινή Αυτοκρατορία στο νεότερο ελληνικό κράτος, μέσα από την Κωνσταντινούπολη, την Αίγινα, το Ναύπλιο και την Αθήνα.">
   <title>Πρωτεύουσες σε Μετάβαση | Ψηφιακός Ιστορικός Άτλαντας</title>
   <link rel="preconnect" href="https://tile.openstreetmap.org">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
@@ -39,6 +39,52 @@
 .dialog-eyebrow[hidden]{display:none!important}
 @media(max-width:580px){.work-facts{grid-template-columns:1fr}.work-facts>div:nth-last-child(2){border-bottom:1px solid #eee7de}.work-facts>div:last-child{border-bottom:0}.editorial-paragraph{font-size:15px;line-height:1.75}}
 
+
+/* Επιμέλεια 2026–2027: μονόγραμμη επιγραφή, ιστορική έμφαση, ενιαία καρτέλα συντονιστή και μελών. */
+.hero-eyebrow-row{padding-top:47px;position:relative;z-index:2}
+.hero-eyebrow-row .eyebrow{display:flex;align-items:center;gap:12px;white-space:nowrap;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;max-width:100%;font-size:clamp(9px,.75vw,11px);letter-spacing:clamp(.65px,.12vw,1.6px)}
+.hero-eyebrow-row .eyebrow::-webkit-scrollbar{display:none}
+.hero-eyebrow-row .eyebrow>span{flex-shrink:0}
+.hero-eyebrow-row .eyebrow .eyebrow-line{flex:0 0 22px}
+.hero-grid{min-height:525px}
+.hero-content{padding:32px 0 70px}
+.hero h1{font-size:clamp(47px,4.6vw,75px);letter-spacing:-2.4px;line-height:1.14;margin:28px 0 29px}
+.hero-art{min-height:500px}
+.members-nav-short{display:none}
+.members-section{background:#f5f1e9;padding:82px 0 99px}
+.members-section .section-heading-row{margin-bottom:30px}
+.members-classes{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:16px;align-items:start}
+.coordinator-card{display:flex;gap:22px;align-items:center;justify-content:space-between;background:#173244;color:#fff;border-left:4px solid #c5a06a;padding:26px 30px;margin-bottom:36px}
+.coordinator-label{font-size:11px;color:#d7b98c;letter-spacing:1.8px;font-weight:700;white-space:nowrap}
+.coordinator-person{text-align:right;display:flex;flex-direction:column;gap:3px}
+.coordinator-person strong{font:400 26px/1.35 Georgia,'Times New Roman',serif}
+.coordinator-person span{color:#cbd5d6;font-size:13px}
+.members-list-title{color:#967a56;font-size:11px;letter-spacing:1.9px;font-weight:700;margin-bottom:16px}
+.grade-card{background:#fffefa;border:1px solid #e1d9cb;padding:22px 24px 25px;min-width:0}
+.grade-card-heading{display:flex;align-items:center;gap:13px;border-bottom:1px solid #e8e1d6;padding-bottom:13px;margin-bottom:18px}
+.grade-card-heading h3{font:400 23px Georgia,'Times New Roman',serif;margin:0}.grade-card-heading h3::first-letter{color:#b18b58}
+.grade-letter{font:400 26px Georgia,'Times New Roman',serif;color:#b18b58}
+.member-list{margin:0;padding:0;list-style:none;display:grid;gap:10px;font-size:14px;line-height:1.5}
+.member-list li{border-bottom:1px solid #f0ece5;padding-bottom:8px;overflow-wrap:anywhere}
+.member-list li:last-child{border-bottom:0;padding-bottom:0}
+.grade-card:last-child .member-list{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:19px}
+.footer .footer-inner{justify-content:space-between;flex-wrap:nowrap;gap:12px}
+.footer .fixed-footer{font-size:11px;white-space:nowrap;overflow-x:auto;scrollbar-width:none;max-width:calc(100% - 32px)}
+.footer .fixed-footer::-webkit-scrollbar{display:none}
+@media(max-width:1100px){.members-classes{grid-template-columns:repeat(2,minmax(0,1fr))}.grade-card:last-child{grid-column:1/-1}.grade-card:last-child .member-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:850px){.hero-eyebrow-row{padding-top:29px}.hero-content{padding:35px 0 42px}.hero h1{font-size:clamp(48px,7.5vw,68px)}.members-section{padding:60px 0 72px}.members-nav-full{display:none}.members-nav-short{display:inline}.coordinator-card{align-items:flex-start;flex-direction:column;gap:14px}.coordinator-person{text-align:left}}
+@media(max-width:580px){.hero-eyebrow-row{padding-top:23px}.hero-eyebrow-row .eyebrow{font-size:10px;gap:9px;letter-spacing:.65px}.hero-content{padding:30px 0 30px}.hero h1{font-size:clamp(42px,9.7vw,54px);line-height:1.16;letter-spacing:-1.8px;margin:22px 0}.hero-intro{font-size:14px}.members-classes{grid-template-columns:1fr}.grade-card:last-child{grid-column:auto}.grade-card:last-child .member-list{grid-template-columns:1fr}.coordinator-card{padding:22px 20px}.coordinator-person strong{font-size:24px}.grade-card{padding:21px 20px}.footer .fixed-footer{font-size:10px}}
+
+
+/* Η εισαγωγή και οι τρεις παράγραφοι του προγράμματος έχουν πλήρη στοίχιση. */
+.hero-intro,
+.about-section .about-grid > div:nth-child(2) > p {
+  text-align: justify;
+  text-align-last: start;
+  text-justify: inter-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
 </style>
   <script defer src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
 </head>
@@ -47,28 +93,28 @@
 <header class="site-header">
   <div class="shell header-inner">
     <a class="identity" href="#top" aria-label="Αρχική σελίδα">
-      <span class="identity-mark" aria-hidden="true">✦</span>
+      <span class="identity-mark" aria-hidden="true">              </span>
       <span class="identity-text"><strong>ΠΡΩΤΕΥΟΥΣΕΣ</strong><span>ΣΕ ΜΕΤΑΒΑΣΗ</span></span>
     </a>
     <nav class="main-nav" aria-label="Κεντρική πλοήγηση">
-      <a href="#atlas">Χάρτης</a><a href="#journey">Οι πόλεις</a><a href="#gallery">Φωτοθήκη</a>
+      <a href="#atlas">Χάρτης</a><a href="#journey">Οι πόλεις</a><a href="#gallery">Φωτοθήκη</a><a href="#members"><span class="members-nav-full">Η Ομάδα μας</span><span class="members-nav-short">Η ομάδα</span></a>
     </nav>
     <a class="header-cta" href="#atlas">Εξερεύνηση <span aria-hidden="true">↗</span></a>
   </div>
 </header>
 <main id="top">
   <section class="hero">
+    <div class="shell hero-eyebrow-row" aria-label="Διαδραστικός ιστορικός άτλαντας — Όμιλος Ιστορίας 1ου Γυμνασίου Πυλαίας, 2026-2027"><div class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span><span>ΔΙΑΔΡΑΣΤΙΚΟΣ ΙΣΤΟΡΙΚΟΣ ΑΤΛΑΝΤΑΣ</span><span class="eyebrow-line" aria-hidden="true"></span><span>ΟΜΙΛΟΣ ΙΣΤΟΡΙΑΣ 1ου ΓΥΜΝΑΣΙΟΥ ΠΥΛΑΙΑΣ ✳ 2026-2027</span></div></div>
     <div class="shell hero-grid">
       <div class="hero-content">
-        <div class="eyebrow"><span class="tiny-star">✳</span> ΔΙΑΔΡΑΣΤΙΚΟΣ ΙΣΤΟΡΙΚΟΣ ΑΤΛΑΝΤΑΣ <span class="eyebrow-line"></span> ΜΑΘΗΤΙΚΟ ΠΡΟΓΡΑΜΜΑ</div>
-        <h1>Η Ιστορία <em>έχει</em><br>γεωγραφία.</h1>
-        <p class="hero-intro">Πολιτισμός, θεσμοί και ιδεολογία από το Βυζάντιο στη νεοελληνική πραγματικότητα. Τέσσερις πόλεις, πολλές ιστορικές διαδρομές, ένα ερώτημα: <strong>πώς ο τόπος διαμορφώνει τις αποφάσεις;</strong></p>
+        <h1>Οι πόλεις αλλάζουν.<br><em>Η Ιστορία συνεχίζεται.</em></h1>
+        <p class="hero-intro">Το πρόγραμμα <strong>«Πρωτεύουσες σε Μετάβαση»</strong> εντάσσεται στο Περιφερειακό Δίκτυο Περιβαλλοντικής Εκπαίδευσης <strong>«Κλικ, προστάτευσέ το!»</strong> και αποτελεί ένα ταξίδι στην ιστορία του Ελληνισμού, μέσα από τέσσερις πόλεις που διαδραμάτισαν καθοριστικό ρόλο σε διαφορετικές ιστορικές περιόδους: την Κωνσταντινούπολη, την Αίγινα, το Ναύπλιο και την Αθήνα.</p>
         <div class="hero-actions"><a class="btn btn-light" href="#atlas">Άνοιξε τον χάρτη <span>↗</span></a><a class="btn btn-outline" href="#journey">Γνώρισε τη διαδρομή <span>↓</span></a></div>
         
       </div>
       <div class="hero-art" aria-hidden="true">
         <div class="art-grid"></div><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div>
-        <div class="orbital-text">ΙΣΤΟΡΙΑ · ΓΕΩΓΡΑΦΙΑ · ΠΟΛΙΤΙΣΜΟΣ</div>
+        <div class="orbital-text">ΙΣΤΟΡΙΑ · ΘΕΣΜΟΙ · ΠΟΛΙΤΙΣΜΟΣ</div>
         <div class="route-line"><span></span><span></span><span></span><span></span></div>
         <span class="art-coordinate coordinate-a">41° 00' N</span><span class="art-coordinate coordinate-b">23° 43' E</span>
         <div class="art-compass">✧</div>
@@ -80,8 +126,8 @@
 
   <section class="atlas-section" id="atlas" aria-labelledby="atlasHeading">
     <div class="shell">
-      <div class="section-topline"><span class="section-index">01 / Η ΕΞΕΡΕΥΝΗΣΗ</span><span class="section-annotation">ΚΛΙΚ ΣΤΑ ΣΗΜΕΙΑ • ΑΝΟΙΓΜΑ ΕΡΓΑΣΙΩΝ</span></div>
-      <div class="section-heading-row"><div><h2 id="atlasHeading">Ο ζωντανός <i>χάρτης</i></h2><p>Διάλεξε πόλη ή θέμα και ανακάλυψε τις εργασίες απευθείας στον χάρτη.</p></div><button class="subtle-button" id="resetMap" type="button">↺ Προβολή όλων</button></div>
+      <div class="section-topline"><span class="section-index">01 / Η ΕΞΕΡΕΥΝΗΣΗ</span><span class="section-annotation">ΚΛΙΚ ΣΤΑ ΣΗΜΕΙΑ • ΑΝΟΙΓΜΑ ΠΛΗΡΟΦΟΡΙΩΝ</span></div>
+      <div class="section-heading-row"><div><h2 id="atlasHeading">Ο ζωντανός <i>χάρτης</i></h2><p>Διάλεξε πόλη ή θέμα και ανακάλυψε τις πληροφορίες απευθείας στον χάρτη.</p></div><button class="subtle-button" id="resetMap" type="button">↺ Προβολή όλων</button></div>
       <div class="map-city-filters" id="cityFilters" role="group" aria-label="Φιλτράρισμα ανά πόλη"></div>
       <div class="atlas-layout">
         <div class="map-panel">
@@ -100,22 +146,79 @@
   </section>
 
   <section class="journey-section" id="journey" aria-labelledby="journeyHeading">
-    <div class="shell"><div class="section-topline"><span class="section-index">02 / Η ΙΣΤΟΡΙΚΗ ΔΙΑΔΡΟΜΗ</span><span class="section-annotation">ΤΟΠΟΣ • ΕΞΟΥΣΙΑ • ΠΕΡΙΒΑΛΛΟΝ</span></div><div class="section-heading-row"><div><h2 id="journeyHeading">Τέσσερις πόλεις.<br><i>Μια μεγάλη μετάβαση.</i></h2><p>Από το οικουμενικό κέντρο της αυτοκρατορίας στη συγκρότηση του νεότερου ελληνικού κράτους.</p></div></div>
+    <div class="shell"><div class="section-topline"><span class="section-index">02 / Η ΙΣΤΟΡΙΚΗ ΔΙΑΔΡΟΜΗ</span><span class="section-annotation">ΙΣΤΟΡΙΑ • ΕΞΟΥΣΙΑ • ΘΕΣΜΟΙ</span></div><div class="section-heading-row"><div><h2 id="journeyHeading">Τέσσερις πόλεις.<br><i>Μια μεγάλη μετάβαση.</i></h2><p>Από το οικουμενικό κέντρο της αυτοκρατορίας στη συγκρότηση του νεότερου ελληνικού κράτους.</p></div></div>
       <div class="city-grid" id="cityGrid"></div>
-      <div class="journey-note"><span class="journey-note-star">✳</span><p>Η επιλογή μιας πρωτεύουσας δεν είναι μόνο διοικητική. Είναι ταυτόχρονα γεωπολιτική, περιβαλλοντική, πολιτισμική και ιδεολογική απόφαση.</p></div>
+      <div class="journey-note"><span class="journey-note-star">✳</span><p>Οι επιλογές των πρωτευουσών συνδέονται με τις πολιτικές αποφάσεις, τους θεσμούς και τις ανάγκες κάθε ιστορικής εποχής.</p></div>
     </div>
   </section>
 
   <section class="gallery-section" id="gallery" aria-labelledby="galleryHeading">
     <div class="shell"><div class="section-topline"><span class="section-index">03 / ΦΩΤΟΓΡΑΦΙΚΟ ΗΜΕΡΟΛΟΓΙΟ</span><span class="section-annotation">ΜΙΑ ΣΥΛΛΟΓΗ ΠΟΥ ΜΕΓΑΛΩΝΕΙ</span></div><div class="section-heading-row"><div><h2 id="galleryHeading">Ματιές από <i>το ταξίδι.</i></h2><p>Εδώ θα συγκεντρώνονται οι φωτογραφίες από τις επισκέψεις και τις μαθητικές εξερευνήσεις.</p></div><span class="gallery-total" id="galleryCount">0 φωτογραφίες</span></div>
       <div id="photoGrid" class="photo-grid"></div>
-      <div id="galleryEmpty" class="gallery-empty"><div class="empty-frames" aria-hidden="true"><span></span><span></span><span></span></div><div><h3>Το φωτογραφικό ημερολόγιο ανοίγει σύντομα.</h3><p>Η ενότητα είναι έτοιμη. Οι φωτογραφίες και οι λεζάντες θα εμφανιστούν εδώ όταν προστεθούν, με τις απαραίτητες άδειες δημοσίευσης.</p></div></div>
+      <div id="galleryEmpty" class="gallery-empty"><div class="empty-frames" aria-hidden="true"><span></span><span></span><span></span></div><div><h3>Το φωτογραφικό ημερολόγιο ανοίγει σύντομα.</h3><p>Η ενότητα είναι έτοιμη. Οι φωτογραφίες και οι λεζάντες θα εμφανιστούν εδώ όταν προστεθούν.</p></div></div>
     </div>
   </section>
 
-  <section class="about-section" id="about"><div class="shell about-grid"><div><span class="section-index">ΤΟ ΠΡΟΓΡΑΜΜΑ</span><h2>Η γεωγραφία<br>ως <i>πρωταγωνιστής</i><br>της Ιστορίας.</h2></div><div><p>Αναζητούμε τη σχέση ανάμεσα στο φυσικό περιβάλλον, στην οικονομία, στην άμυνα και στους θεσμούς. Η Κωνσταντινούπολη, η Αίγινα, το Ναύπλιο και η Αθήνα γίνονται τέσσερα εργαστήρια ιστορικής και γεωγραφικής σκέψης.</p><p>Ο χάρτης παρουσιάζει τις μαθητικές έρευνες σε σημεία ενδιαφέροντος και παραμένει ανοιχτός σε νέα κείμενα, τεκμήρια και φωτογραφίες.</p><a class="about-link" href="#atlas">Επιστροφή στον άτλαντα ↗</a></div></div></section>
+  <!-- Ενιαία καρτέλα συντονιστή και μελών. Τα ονόματα ομαδοποιούνται μόνο ανά τάξη. -->
+  <section class="members-section" id="members" aria-labelledby="membersHeading">
+    <div class="shell">
+      <div class="section-topline"><span class="section-index">04 / Η ΟΜΑΔΑ ΜΑΣ</span><span class="section-annotation">ΟΜΙΛΟΣ ΙΣΤΟΡΙΑΣ · 2026–2027</span></div>
+      <div class="section-heading-row"><div><h2 id="membersHeading">Οι άνθρωποι <i>του ομίλου.</i></h2><p>Ο συντονιστής εκπαιδευτικός και οι μαθητές και μαθήτριες που συμμετέχουν στο πρόγραμμα.</p></div></div>
+      <div class="coordinator-card"><div class="coordinator-label">ΣΥΝΤΟΝΙΣΤΗΣ ΕΚΠΑΙΔΕΥΤΙΚΟΣ</div><div class="coordinator-person"><strong>Παναγιώτης Δόμβρος</strong><span>Διευθυντής 1ου Γυμνασίου Πυλαίας</span></div></div>
+      <div class="members-list-title">ΜΕΛΗ ΤΟΥ ΟΜΙΛΟΥ</div>
+      <div class="members-classes">
+        <article class="grade-card" aria-labelledby="grade-Α">
+          <div class="grade-card-heading"><h3 id="grade-Α">Α΄ Γυμνασίου</h3></div>
+          <ul class="member-list">
+              <li>Αναγνώστου Ελπινίκη</li>
+              <li>Βέσκος Γεώργιος</li>
+              <li>Μιχαηλούδης Χρήστος</li>
+              <li>Προεστού Ραφαηλία</li>
+              <li>Σκόνδρας Βασίλειος</li>
+              <li>Σταμματέλος Αλέξανδρος</li>
+              <li>Σταμπουλίδου Μαρία</li>
+          </ul>
+        </article>
+        <article class="grade-card" aria-labelledby="grade-Β">
+          <div class="grade-card-heading"><h3 id="grade-Β">Β΄ Γυμνασίου</h3></div>
+          <ul class="member-list">
+              <li>Παπανδρέου Γεώργιος</li>
+              <li>Τουφέγγη Αντωνία Λυδία</li>
+              <li>Τσαγκαλίδου Ελεάννα</li>
+              <li>Τσιτσέλης Στάθης</li>
+              <li>Χαριστές Κωνσταντίνος</li>
+          </ul>
+        </article>
+        <article class="grade-card" aria-labelledby="grade-Γ">
+          <div class="grade-card-heading"><h3 id="grade-Γ">Γ΄ Γυμνασίου</h3></div>
+          <ul class="member-list">
+              <li>Βέργα Ιωάννα</li>
+              <li>Ζαρδαβάς Αχιλλέας</li>
+              <li>Κολοκούρης Παναγιώτης</li>
+              <li>Λαφτσίδης Γιώργος</li>
+              <li>Μασέλου Ιόλη</li>
+              <li>Παπαδόπουλος Κλέων</li>
+              <li>Παπαδοπούλου Αναστασία</li>
+              <li>Παπαδοπούλου Ιωάννα</li>
+              <li>Παπασπυριδάκος Συμεών</li>
+              <li>Πατιάκας Θεόφιλος</li>
+              <li>Παυλίδης Χαραλαμπίδης Αλέξανδρος</li>
+              <li>Πινούλης Ευστράτιος</li>
+              <li>Πιπερόπουλος Βασίλειος</li>
+              <li>Πολύχρου Παναγιώτα</li>
+              <li>Ρικούδης Σπύρος</li>
+              <li>Σαχανίδου Ελευθερία</li>
+              <li>Φουντουλάκης Γιώργος</li>
+              <li>Χριστοφορίδης Κωνσταντίνος</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about" aria-labelledby="aboutHeading"><div class="shell about-grid"><div><span class="section-index">ΤΟ ΠΡΟΓΡΑΜΜΑ</span><h2 id="aboutHeading">Πόλεις, θεσμοί<br>και <i>Ιστορία.</i></h2></div><div><p>Το πρόγραμμα «Πρωτεύουσες σε Μετάβαση» εντάσσεται στο Περιφερειακό Δίκτυο Περιβαλλοντικής Εκπαίδευσης <strong> «Κλικ, προστάτευσέ το!»</strong> και αποτελεί ένα ταξίδι στην ιστορία του Ελληνισμού, μέσα από τέσσερις πόλεις που διαδραμάτισαν καθοριστικό ρόλο σε διαφορετικές ιστορικές περιόδους: την Κωνσταντινούπολη, την Αίγινα, το Ναύπλιο και την Αθήνα.</p><p>Από τη Βυζαντινή Αυτοκρατορία έως τη συγκρότηση του ανεξάρτητου ελληνικού κράτους και την καθιέρωση της Αθήνας ως πρωτεύουσας, οι μαθητές διερευνούν τα ιστορικά γεγονότα, τα πρόσωπα, τους θεσμούς και τις πολιτικές αποφάσεις που διαμόρφωσαν την πορεία του Ελληνισμού.</p><p>Μέσα από την ιστορική έρευνα, τη μελέτη μνημείων και πηγών και τη δημιουργία ψηφιακού υλικού, ανακαλύπτουν πώς οι πόλεις αναδείχθηκαν σε κέντρα πολιτικής εξουσίας, πολιτισμού και συλλογικής μνήμης. Παράλληλα, εξετάζουν τον τρόπο με τον οποίο η γεωγραφική θέση και το φυσικό περιβάλλον επηρέασαν τις ιστορικές εξελίξεις και τις επιλογές κάθε εποχής.</p><a class="about-link" href="#atlas">Επιστροφή στον άτλαντα ↗</a></div></div></section>
 </main>
-<footer class="footer"><div class="shell footer-inner"><span class="footer-mark">✦ <strong>ΠΡΩΤΕΥΟΥΣΕΣ ΣΕ ΜΕΤΑΒΑΣΗ</strong></span><span class="fixed-footer">Παναγιώτης Δόμβρος, Εκπαιδευτικός - Θεατρολόγος, Επιμορφωτής ΤΠΕ, Διευθυντής 1ου Γυμνασίου Πυλαίας</span><a href="#top" aria-label="Πάνω">↑</a></div></footer>
+<footer class="footer"><div class="shell footer-inner"><span class="fixed-footer">Δημιουργία: Παναγιώτης Δόμβρος, Εκπαιδευτικός-Θεατρολόγος, Διευθυντής 1ου Γυμνασίου Πυλαίας</span><a href="#top" aria-label="Επιστροφή στην αρχή">↑</a></div></footer>
 
 <dialog id="workDialog" class="feature-dialog" aria-labelledby="dialogTitle">
   <div class="dialog-shell"><div class="dialog-toolbar"><span class="dialog-eyebrow" id="dialogTag">ΜΑΘΗΤΙΚΗ ΕΡΕΥΝΑ</span><button class="dialog-close" id="closeDialog" type="button" aria-label="Κλείσιμο εργασίας">✕</button></div><div class="dialog-scroll" id="dialogBody"></div><div class="dialog-bottom"><button class="dialog-navigation" id="prevWork" type="button">← Προηγούμενο</button><button class="dialog-navigation" id="nextWork" type="button">Επόμενο →</button></div></div>
